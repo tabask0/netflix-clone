@@ -20,20 +20,20 @@ const Row = (props: any) => {
   console.log(movies);
 
   return (
-    <div>
-      <h2>{props.title}</h2>
+    <div className="text-white text-3xl">
+      <h2 className="ml-20">{props.title}</h2>
       <div className="flex overflow-y-hidden overflow-x-scroll posters p-4">
         {movies.map((movie: any) => (
           <img
             key={movie.id}
-            className={`w-20 row-poster ${
+            className={`w-20 row-poster cursor-pointer ${
               props.isLargeRow && "row-poster-large"
             }`}
             src={`${url}${
               props.isLargeRow ? movie.poster_path : movie.backdrop_path
             }`}
             alt={movie.name}
-          ></img>
+          />
         ))}
       </div>
     </div>
