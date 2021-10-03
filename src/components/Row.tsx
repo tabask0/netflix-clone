@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import axios from "axios";
-import "../App.css";
+import "../index.css";
+import "../style.css";
 
 const url = "https://image.tmdb.org/t/p/original/";
 
@@ -19,13 +20,18 @@ const Row = (props: any) => {
   console.log(movies);
 
   return (
-    <div className="w-full">
+    <div>
       <h2>{props.title}</h2>
-      <div className="row__posters">
+      <div className="flex overflow-y-hidden overflow-x-scroll posters p-4">
         {movies.map((movie: any) => (
           <img
-            className="w-20"
-            src={`${url}${movie.poster_path}`}
+            key={movie.id}
+            className={`w-20 row-poster ${
+              props.isLargeRow && "row-poster-large"
+            }`}
+            src={`${url}${
+              props.isLargeRow ? movie.poster_path : movie.backdrop_path
+            }`}
             alt={movie.name}
           ></img>
         ))}
