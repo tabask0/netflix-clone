@@ -2,7 +2,6 @@ import React, { useEffect, useState } from "react";
 import axios from "axios";
 import requests from "../requests";
 import "../style.css";
-import { truncate } from "fs";
 
 const Banner = () => {
   const [movie, setMovie]: any = useState([]);
