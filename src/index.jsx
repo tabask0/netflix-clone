@@ -11,7 +11,7 @@ ReactDOM.render(
     <Router>
       <Switch>
         <Route exact path='/netflix-clone' component={Welcome} />
-        <Route path='/app' component={App} />
+        <Route path='/netflix-clone/app' component={App} />
       </Switch>
     </Router>
   </React.StrictMode>,
