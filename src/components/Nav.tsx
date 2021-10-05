@@ -14,7 +14,7 @@ const Nav = () => {
 
   return (
     <div className={`nav ${show && "nav-black"}`}>
-      <div className="flex row-auto justify-between">
+      <div className="flex row-auto justify-between ml-8">
         <img
           className="logo"
           src="https://upload.wikimedia.org/wikipedia/commons/0/08/Netflix_2015_logo.svg"

@@ -5,7 +5,7 @@ import App from "../App";
 
 export function Welcome() {
   const history = useHistory();
-  const goHome = () => history.push("app");
+  const goHome = () => history.push("netflix-clone/app");
 
   return (
     <div className="welcome">

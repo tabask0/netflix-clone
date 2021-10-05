@@ -22,7 +22,7 @@ const Row = (props: any) => {
   return (
     <div className="text-white text-3xl">
       <h2 className="ml-20">{props.title}</h2>
-      <div className="flex overflow-y-hidden overflow-x-scroll posters p-4">
+      <div className="flex overflow-y-hidden overflow-x-scroll posters p-4 ml-10">
         {movies.map((movie: any) => (
           <img
             key={movie.id}
