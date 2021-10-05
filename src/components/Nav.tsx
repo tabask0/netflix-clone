@@ -29,16 +29,16 @@ const Nav = () => {
         </div>
       </div>
 
-      <div className="flex row-auto items-center">
+      <div className="flex row-auto items-center mr-10">
         <i className="fas fa-search text-white items-center text-xl mr-4"></i>
         <h5 className="text-white items-center text-md mr-6">Kids</h5>
-        <i className="fas fa-bell text-white items-center text-xl mr-8"></i>
+        <i className="fas fa-bell text-white items-center text-2xl mr-8"></i>
         <img
-          className="avatar"
+          className="avatar rounded mr-2"
           src="https://upload.wikimedia.org/wikipedia/commons/0/0b/Netflix-avatar.png"
           alt="avatar"
         />
-        <i className="fas fa-sort-down text-white text-md mt-2 ml-2"></i>
+        <i className="fas fa-sort-down text-white text-md ml-2"></i>
       </div>
     </div>
   );
