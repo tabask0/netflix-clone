@@ -8,13 +8,13 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
 ReactDOM.render(
   <React.StrictMode>
-  <Router>
-  <Switch>
-    <Route exact path='/netflix-clone' component={Welcome} />
-    <Route path='/netflix-clone/app' component={App} />
-    </Switch>
-  </Router>
+    <Router>
+      <Switch>
+        <Route exact path='/netflix-clone' component={Welcome} />
+        <Route path='/app' component={App} />
+      </Switch>
+    </Router>
   </React.StrictMode>,
   document.getElementById("root")
-  
+
 );
