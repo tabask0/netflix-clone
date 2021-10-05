@@ -5,9 +5,8 @@ const Footer = () => {
     <div
       style={{
         width: "100%",
-        height: "300px",
+        height: "60vh",
         background: "#111",
-        marginTop: "60px",
       }}
       className="flex flex-row justify-center items-center"
     >
@@ -126,7 +125,7 @@ const Footer = () => {
         </h3>
         <h3
           style={{ color: "#808080" }}
-          className=" mb-2 font-extralight text-sm"
+          className="mb-2 font-extralight text-sm"
         >
           Corporate Information
         </h3>
